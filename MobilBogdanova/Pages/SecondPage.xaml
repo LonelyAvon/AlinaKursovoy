@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilBogdanova.SecondPage"
+             Title="SecondPage">
+    <Grid  RowDefinitions="85*,60*,490*,50*,120*" ColumnDefinitions="60,1*,60"
+           BackgroundColor="White">
+        <StackLayout Grid.Row="1" Grid.Column="1" >
+        <Label Text="Соберём немного"
+               TextColor="Black"
+               FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
+            <Label Text="информации о Вас..."
+               TextColor="#407F80"
+               FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="1"  Spacing="40" Margin="0,60,0,30" MaximumWidthRequest="308" >
+
+            <StackLayout>
+                <Label Text="Укажите свой пол" TextColor="#9C9C9C" HorizontalOptions="Center" FontSize="20" />
+                <Entry x:Name="GenderTextBox"  FontSize="18"  TextColor="Black"/>
+                <Border/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Введите свой рост" TextColor="#9C9C9C" HorizontalOptions="Center" FontSize="20" />
+                <Entry x:Name="HeightTextBox" FontSize="18"  TextColor="Black"/>
+                <Border/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Введите свой вес" TextColor="#9C9C9C" HorizontalOptions="Center" FontSize="20" />
+                <Entry x:Name="WeightTextBox" FontSize="18" TextColor="Black"/>
+                <Border/>
+            </StackLayout>
+
+            <StackLayout>
+
+                <Label Text="Выберите дату рождения" TextColor="#9C9C9C" FontSize="20" HorizontalOptions="Center"/>
+                <DatePicker x:Name="Date" TextColor="Black" FontSize="18" HorizontalOptions="Center"/>
+                <Border/>
+            </StackLayout>
+        </StackLayout>
+
+        <Button Grid.Row="3" Grid.Column="1" Text="ДАЛЕЕ →" x:Name="ToNext" Clicked="ToNext_Clicked" />
+
+    </Grid>
+</ContentPage>

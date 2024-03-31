@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilBogdanova.ThirdPage"
+             Title="ThirdPage">
+    <Grid  RowDefinitions="40*,60*,490*,50*,120*" ColumnDefinitions="60,1*,60"
+           BackgroundColor="White">
+        <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" >
+        <Label Text="Выберите свою "
+               TextColor="Black"
+               FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
+            <Label Text="активность"
+               TextColor="#407F80"
+               FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="1"  Spacing="40" Margin="0,30,0,30" MaximumWidthRequest="308" >
+
+            <StackLayout>
+                <Label x:Name="SliderText" Text="Минимальная нагрузка" TextColor="Black" HorizontalOptions="Center" FontSize="20" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" MinimumHeightRequest="55"/>
+                <Slider x:Name="ActiveSlider" ValueChanged="ActiveSlider_ValueChanged" Minimum="0" Maximum="10" ThumbColor="#407F80" MinimumTrackColor="#407F80" MaximumTrackColor="#407F80" Background="White" Margin="0,20,0,0"/>
+            </StackLayout>
+
+            <StackLayout Spacing="20" >
+
+                <Label Margin="30,0,30,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Выберите свою " TextColor="Black" FontSize="24"/>
+                            <Span Text="цель" TextColor="#407f80" FontSize="24" />
+                        </FormattedString>
+                    
+                    </Label.FormattedText>
+
+                </Label>
+
+                <Button x:Name="Sustentaion" Clicked="Sustentaion_Clicked" Padding="20,25,20,25" FontSize="20" Text="Поддержание тела в форме" HorizontalOptions="Fill" TextColor="Black"  BackgroundColor="#d9d9d9"/>
+                <Button x:Name="Slim" Clicked="Slim_Clicked" Padding="20,25,20,25" FontSize="20" Text="Похудение" TextColor="Black" HorizontalOptions="Fill"  BackgroundColor="#d9d9d9"/>
+                <Button x:Name="Set" Clicked="Set_Clicked" Padding="20,25,20,25" FontSize="20" Text="Набор мышечной массы" TextColor="Black" HorizontalOptions="Fill"  BackgroundColor="#d9d9d9"/>
+
+            </StackLayout>
+        </StackLayout>
+
+        <Button Grid.Row="3" Grid.Column="1" Text="ДАЛЕЕ →" x:Name="ToNext" />
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilBogdanova.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <Grid  RowDefinitions="85*,60*,490*,50*,120*" ColumnDefinitions="60,1*,60"
+           BackgroundColor="White">
+        <StackLayout Grid.Row="1" Grid.Column="1" >
+        <Label Text="Добро пожаловать в"
+               TextColor="Black"
+               FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
+            <Label Text="Дневник питания!"
+               TextColor="#407F80"
+               FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+
+        <Button x:Name="ToNext" Clicked="ToNext_Clicked" Grid.Row="3" Grid.Column="1" Text="ДАЛЕЕ →" />
+         
+    </Grid>
+</ContentPage>
+

@@ -3,7 +3,7 @@ namespace MobilBogdanova;
 
 public partial class ThirdPage : ContentPage
 {
-	public int k = 0;
+    public string info;
 
 	public ThirdPage()
 	{
@@ -33,50 +33,28 @@ public partial class ThirdPage : ContentPage
 			SliderText.Text = "Ежедневные интенсивные тренировки";
         }
     }
-     void Sustentaion_Clicked(object sender, EventArgs args)
+    void Sustentaion_Clicked(object sender, EventArgs args)
     {
-        if (Slim.IsEnabled)
-        {
-            Slim.IsEnabled = false;
-            Set.IsEnabled = false;
-            Sustentaion.BackgroundColor = new Color(187, 204, 204);
-        }
-        else
-        {
-            Slim.IsEnabled = true;
-            Set.IsEnabled = true;
-            Sustentaion.BackgroundColor = new Color(217, 217, 217);
-        }
-       
+            
+        Sustentaion.BackgroundColor = new Color(187, 204, 204);
+        Set.BackgroundColor = new Color(217, 217, 217);
+        Slim.BackgroundColor = new Color(217, 217, 217);
+        info = Sustentaion.Text;
     }
-     void Slim_Clicked(object sender, EventArgs args)
+    void Slim_Clicked(object sender, EventArgs args)
     {
-        if (Sustentaion.IsEnabled)
-        {
-            Sustentaion.IsEnabled = false;
-            Set.IsEnabled = false;
-            Slim.BackgroundColor = new Color(187, 204, 204);
-        }
-        else
-        {
-            Sustentaion.IsEnabled = true;
-            Set.IsEnabled = true;
-            Slim.BackgroundColor = new Color(217, 217, 217);
-        }
+        Slim.BackgroundColor = new Color(187, 204, 204);
+        Sustentaion.BackgroundColor = new Color(217, 217, 217);
+        Set.BackgroundColor = new Color(217, 217, 217);
+        info = Slim.Text;
+
     }
     void Set_Clicked(object sender, EventArgs args)
     {
-        if (Sustentaion.IsEnabled)
-        {
-            Sustentaion.IsEnabled = false;
-            Slim.IsEnabled = false;
-            Set.BackgroundColor = new Color(187, 204, 204);
-        }
-        else
-        {
-            Sustentaion.IsEnabled = true;
-            Slim.IsEnabled = true;
-            Set.BackgroundColor = new Color(217, 217, 217);
-        }
+        Set.BackgroundColor = new Color(187, 204, 204);
+        Sustentaion.BackgroundColor = new Color(217, 217, 217);
+        Slim.BackgroundColor = new Color(217, 217, 217);
+        info = Set.Text;
+
     }
 }

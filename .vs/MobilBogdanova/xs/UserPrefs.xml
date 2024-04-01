@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{20D86713-C7C9-4BDB-804F-667189BC81E2}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobilBogdanova/Pages/ThirdPage.xaml.cs">
+    <Files>
+      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml.cs" Line="23" Column="20" />
+      <File FileName="MobilBogdanova/Pages/SecondPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/Pages/SecondPage.xaml" />
+      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml" />
+      <File FileName="MobilBogdanova/MainPage.xaml" />
+      <File FileName="MobilBogdanova/MainPage.xaml.cs" />
+      <File FileName="MobilBogdanova/Resources/Styles/Styles.xaml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MobilBogdanova" expanded="True">
+            <Node name="MobilBogdanova" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="SecondPage.xaml" expanded="True" />
+                <Node name="ThirdPage.xaml" expanded="True">
+                  <Node name="ThirdPage.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
+                <Node name="Styles" expanded="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MobilBogdanova PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" Xamarin.HotReload.DebuggerTimeoutException.MobilBogdanova.HideInfoBar="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Helper FirstBuild="True" />
+</Properties>

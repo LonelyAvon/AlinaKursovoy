@@ -1,0 +1,12 @@
+/Users/user/Projects/MobilBogdanova/Helper/bin/Debug/net7.0/Helper.deps.json
+/Users/user/Projects/MobilBogdanova/Helper/bin/Debug/net7.0/Helper.dll
+/Users/user/Projects/MobilBogdanova/Helper/bin/Debug/net7.0/Helper.pdb
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.csproj.AssemblyReference.cache
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.AssemblyInfoInputs.cache
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.AssemblyInfo.cs
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.csproj.CoreCompileInputs.cache
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.dll
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/refint/Helper.dll
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.pdb
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/ref/Helper.dll

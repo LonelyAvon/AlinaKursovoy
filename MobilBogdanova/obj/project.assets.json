@@ -2015,6 +2015,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-android33.0/android-arm": {
@@ -4030,6 +4040,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -6047,6 +6067,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-android33.0/android-x64": {
@@ -8062,6 +8092,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -10079,6 +10119,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-android33.0/iossimulator-x64": {
@@ -12094,6 +12144,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -14111,6 +14171,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-ios16.1": {
@@ -14385,6 +14455,16 @@
           "lib/net7.0-ios16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -14661,6 +14741,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-ios16.1/android-arm64": {
@@ -14935,6 +15025,16 @@
           "lib/net7.0-ios16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -15211,6 +15311,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-ios16.1/android-x86": {
@@ -15485,6 +15595,16 @@
           "lib/net7.0-ios16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -15761,6 +15881,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-ios16.1/maccatalyst-x64": {
@@ -16035,6 +16165,16 @@
           "lib/net7.0-ios16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -16311,6 +16451,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-arm": {
@@ -16585,6 +16735,16 @@
           "lib/net7.0-maccatalyst16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -16861,6 +17021,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-x64": {
@@ -17135,6 +17305,16 @@
           "lib/net7.0-maccatalyst16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     },
@@ -17411,6 +17591,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/iossimulator-x64": {
@@ -17686,6 +17876,16 @@
             "locale": "en-US"
           }
         }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/maccatalyst-x64": {
@@ -17960,6 +18160,16 @@
           "lib/net7.0-maccatalyst16.1/en-US/Syncfusion.Maui.ListView.resources.dll": {
             "locale": "en-US"
           }
+        }
+      },
+      "Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helper.dll": {}
         }
       }
     }
@@ -20560,10 +20770,16 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "Helper/1.0.0": {
+      "type": "project",
+      "path": "../Helper/Helper.csproj",
+      "msbuildProject": "../Helper/Helper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
+      "Helper >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -20583,6 +20799,7 @@
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0.1"
     ],
     "net7.0-ios16.1": [
+      "Helper >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -20591,6 +20808,7 @@
       "Syncfusion.Maui.Inputs >= 25.1.37"
     ],
     "net7.0-maccatalyst16.1": [
+      "Helper >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -20627,15 +20845,27 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/user/Projects/MobilBogdanova/Helper/Helper.csproj": {
+              "projectPath": "/Users/user/Projects/MobilBogdanova/Helper/Helper.csproj"
+            }
+          }
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/user/Projects/MobilBogdanova/Helper/Helper.csproj": {
+              "projectPath": "/Users/user/Projects/MobilBogdanova/Helper/Helper.csproj"
+            }
+          }
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/user/Projects/MobilBogdanova/Helper/Helper.csproj": {
+              "projectPath": "/Users/user/Projects/MobilBogdanova/Helper/Helper.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

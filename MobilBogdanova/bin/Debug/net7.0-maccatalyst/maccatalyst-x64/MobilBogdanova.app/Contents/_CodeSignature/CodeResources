@@ -10,7 +10,11 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		Bq0Ay+xiNisSoACk65SxHnw2MqQ=
+		pXAvQ1f37g36/Cxz526SRKBvI1A=
+		</data>
+		<key>Resources/Images/grape.png</key>
+		<data>
+		7vMG9SYAHB4WWXU5ro0ECL3pHvc=
 		</data>
 		<key>Resources/MauiInfo.plist</key>
 		<data>
@@ -43,6 +47,10 @@
 		<key>Resources/dotnet_bot@3x.png</key>
 		<data>
 		lilXtcIcHOg1m2H2kahMfnG+kR4=
+		</data>
+		<key>Resources/grape.png</key>
+		<data>
+		7vMG9SYAHB4WWXU5ro0ECL3pHvc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -198,14 +206,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n3i9Mozoi89NTAWRe2RWOPnUorkHy1aQCrNMKDS/+wU=
+			4IvfoEFC4FvJKJ1/BF/SZ2AjqvhbrViFwOsv/ZCcdbA=
 			</data>
 		</dict>
 		<key>MonoBundle/MobilBogdanova.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T7XMoWTKyguY/vo8p/mXPEDbQ7L2URXcAz2rcuetr6s=
+			G6lDgRfX6TI8VjjWYcymBqxRhQ3bso+zQHqmeCi7Wn8=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Licensing.dll</key>
@@ -1430,7 +1438,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j7RFfmT9i5pwo2yYFJ1RhB1U0kBUgx603SK1ksUR9qs=
+			IZUyqyjff225xUQglJSFb6kiXsHCH3lPqmJzlbZP7qA=
+			</data>
+		</dict>
+		<key>Resources/Images/grape.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AMI/mtSMJ9JFoee0wmdMPc4oU77xDxHwJiGtJVtA55w=
 			</data>
 		</dict>
 		<key>Resources/MauiInfo.plist</key>
@@ -1487,6 +1502,13 @@
 			<key>hash2</key>
 			<data>
 			KYloWNEPaiuRgKGUuViGTax4BpymRmXlB8tt3TPNYxk=
+			</data>
+		</dict>
+		<key>Resources/grape.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AMI/mtSMJ9JFoee0wmdMPc4oU77xDxHwJiGtJVtA55w=
 			</data>
 		</dict>
 	</dict>

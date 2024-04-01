@@ -15,7 +15,7 @@
                FontSize="24" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"/>
         </StackLayout>
 
-
+        <Image Grid.Row="2" Grid.Column="1" Source="Images/grape.png" MaximumHeightRequest="300"/>
         <Button x:Name="ToNext" Clicked="ToNext_Clicked" Grid.Row="3" Grid.Column="1" Text="ДАЛЕЕ →" />
          
     </Grid>

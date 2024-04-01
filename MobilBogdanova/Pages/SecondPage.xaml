@@ -30,14 +30,14 @@
 
             <StackLayout>
                 <Label Text="Введите свой вес" TextColor="#9C9C9C" HorizontalOptions="Center" FontSize="20" />
-                <Entry x:Name="WeightTextBox" FontSize="18" TextColor="Black"/>
+                <Entry x:Name="WeightTextBox" FontSize="18" TextColor="Black"  />
                 <Border/>
             </StackLayout>
 
             <StackLayout>
 
                 <Label Text="Выберите дату рождения" TextColor="#9C9C9C" FontSize="20" HorizontalOptions="Center"/>
-                <DatePicker x:Name="Date" TextColor="Black" FontSize="18" HorizontalOptions="Center"/>
+                <DatePicker x:Name="BirthdayDatePicker" TextColor="Black" FontSize="18" HorizontalOptions="Center"/>
                 <Border/>
             </StackLayout>
         </StackLayout>

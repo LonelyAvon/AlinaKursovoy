@@ -16,6 +16,7 @@
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Syncfusion.Maui.GridCommon.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Syncfusion.Maui.Inputs.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Syncfusion.Maui.ListView.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Helper.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/MobilBogdanova.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.CSharp.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.VisualBasic.Core.dll
@@ -192,6 +193,7 @@
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Maui.Controls.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Maui.Essentials.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/MobilBogdanova.pdb
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Helper.pdb
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/libSystem.IO.Compression.Native.dylib
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/libSystem.Native.dylib
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/libSystem.Net.Security.Native.dylib

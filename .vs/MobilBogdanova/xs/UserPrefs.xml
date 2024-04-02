@@ -1,43 +1,59 @@
 ﻿<Properties StartupConfiguration="{20D86713-C7C9-4BDB-804F-667189BC81E2}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MobilBogdanova/Pages/ThirdPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobilBogdanova/Pages/Main.xaml">
     <Files>
-      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml.cs" Line="23" Column="20" />
+      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml.cs" Line="17" Column="4" />
       <File FileName="MobilBogdanova/Pages/SecondPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="MobilBogdanova/Pages/SecondPage.xaml" />
-      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml" />
-      <File FileName="MobilBogdanova/MainPage.xaml" />
-      <File FileName="MobilBogdanova/MainPage.xaml.cs" />
-      <File FileName="MobilBogdanova/Resources/Styles/Styles.xaml" />
+      <File FileName="MobilBogdanova/Pages/SecondPage.xaml" Line="47" Column="12" />
+      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml" Line="45" Column="1" />
+      <File FileName="MobilBogdanova/MainPage.xaml" Line="21" Column="12" />
+      <File FileName="MobilBogdanova/MainPage.xaml.cs" Line="17" Column="1" />
+      <File FileName="MobilBogdanova/Resources/Styles/Styles.xaml" Line="210" Column="65" />
+      <File FileName="MobilBogdanova/App.xaml" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/App.xaml.cs" Line="3" Column="1" />
+      <File FileName="Helper/ClientModel.cs" Line="1" Column="1" />
+      <File FileName="Helper/Helper.cs" Line="6" Column="30" />
+      <File FileName="MobilBogdanova/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/Pages/Main.xaml" Line="76" Column="42" />
+      <File FileName="MobilBogdanova/Platforms/MacCatalyst/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/Platforms/MacCatalyst/Program.cs" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/Platforms/Windows/Package.appxmanifest" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/Platforms/iOS/Info.plist" />
+      <File FileName="MobilBogdanova/Pages/Main.xaml.cs" Line="156" Column="36" />
+      <File FileName="../../../../usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Sdk/16.4.7141/tools/msbuild/iOS/Xamarin.Shared.targets" Line="2174" Column="3" />
+      <File FileName="MobilBogdanova/Platforms/MacCatalyst/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MobilBogdanova" expanded="True">
-            <Node name="MobilBogdanova" expanded="True">
+          <Node name="MobilBogdanova" expanded="True" selected="True">
+            <Node name="MobilBogdanova">
               <Node name="Pages" expanded="True">
+                <Node name="Main.xaml" expanded="True" />
                 <Node name="SecondPage.xaml" expanded="True" />
-                <Node name="ThirdPage.xaml" expanded="True">
-                  <Node name="ThirdPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="ThirdPage.xaml" expanded="True" />
               </Node>
+              <Node name="Platforms" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
+                <Node name="Buttons" expanded="True" />
                 <Node name="Styles" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.MobilBogdanova PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" Xamarin.HotReload.DebuggerTimeoutException.MobilBogdanova.HideInfoBar="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Helper FirstBuild="True" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" />
 </Properties>

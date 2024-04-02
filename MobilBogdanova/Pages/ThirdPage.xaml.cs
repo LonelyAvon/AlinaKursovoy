@@ -1,15 +1,16 @@
 ﻿
 namespace MobilBogdanova;
+using Helper;
 
 public partial class ThirdPage : ContentPage
 {
     public string info;
 
 	public ThirdPage()
-	{
+    { 
 		InitializeComponent();
 	}
-    void ActiveSlider_ValueChanged(object sender, ValueChangedEventArgs e)
+    public void ActiveSlider_ValueChanged(object sender, ValueChangedEventArgs e)
     {
 		var value = (sender as Slider).Value;
 		if(value<2)
@@ -56,5 +57,10 @@ public partial class ThirdPage : ContentPage
         Slim.BackgroundColor = new Color(217, 217, 217);
         info = Set.Text;
 
+    }
+
+    async void ToNext_Clicked(System.Object sender, System.EventArgs e)
+    {
+        await Navigation.PushModalAsync(new Main());
     }
 }

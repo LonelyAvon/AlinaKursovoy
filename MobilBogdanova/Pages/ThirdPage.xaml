@@ -41,7 +41,7 @@
             </StackLayout>
         </StackLayout>
 
-        <Button Grid.Row="3" Grid.Column="1" Text="ДАЛЕЕ →" x:Name="ToNext" />
+        <Button Grid.Row="3" Grid.Column="1" Text="ДАЛЕЕ →" x:Name="ToNext" Clicked="ToNext_Clicked"/>
 
     </Grid>
 </ContentPage>

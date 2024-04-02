@@ -2,11 +2,102 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobilBogdanova.Main"
-             Title="Main">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Main"
+            NavigationPage.HasNavigationBar="False">
+    <Grid  RowDefinitions="3*,40*,3*,Auto,2*,Auto,Auto,30*,100*,100*" ColumnDefinitions="45,1*,45"
+           BackgroundColor="White">
+        <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+            <Label Text="Дневник" FontAttributes="Bold" FontFamily="" TextColor="Black" VerticalOptions="Center" FontSize="32"/>
+            <DatePicker Format="M" TextColor="Black" HorizontalOptions="EndAndExpand" FontSize="20" />
+            <Image Source="calendar.png" MinimumHeightRequest="40"/>
+        </StackLayout>
+        <Border Grid.Row="2" Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="#d9d9d9"/>
+       <StackLayout Margin="10,0,10,0" Grid.Row="3" Grid.Column="1" Spacing="40">
+          <Label>
+              <Label.FormattedText>
+                  <FormattedString>
+                      <Span Text="Ежедневная норма  = " FontSize="20" TextColor="Black"/>
+                      <Span x:Name="ResultCcal" Text=" 0 ккал" TextColor="#407F80" FontSize="20" FontAttributes="Bold" TextDecorations="Underline" />
+                  </FormattedString>
+
+              </Label.FormattedText>
+          </Label>
+           <StackLayout Spacing="12">
+                  <StackLayout Margin="30,0,30,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                      <Label Text="Съедено" FontSize="16" TextColor="#b5b5b5" HorizontalOptions="StartAndExpand"/>
+                      <Label  Text="Осталось" FontSize="16" TextColor="#b5b5b5" HorizontalOptions="EndAndExpand"/>
+                  </StackLayout>
+                  <ProgressBar  Progress="0.3" BackgroundColor="#d9d9d9" ProgressColor="#D59B6B" ScaleY="2" ScaleX="1.05" />
+               <StackLayout  Margin="30,0,30,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                      <Label x:Name="EatLabel" FontSize="16" Text="1000" TextColor="Black" Margin="10,0,0,0"/>
+                      <Label x:Name="StayLabel" FontSize="16" Text="500" Margin="0,0,20,0" TextColor="Black" HorizontalOptions="EndAndExpand"/>
+                  </StackLayout>
+           </StackLayout>
+           <FlexLayout JustifyContent="SpaceBetween">
+               <StackLayout Spacing="12" MaximumHeightRequest="100" MaximumWidthRequest="80">
+                    <Label Text="Белки (г)" FontSize="14" TextColor="#b5b5b5" HorizontalOptions="Center"/>
+                    <ProgressBar  Progress="0.8" BackgroundColor="#d9d9d9" ProgressColor="#D59B6B" ScaleY="2" ScaleX="1.2"/>
+                    <Label x:Name="ProteinsLabel" FontSize="16" Text="80 из 100" TextColor="Black" HorizontalOptions="Center" />
+                </StackLayout>
+
+                <StackLayout Spacing="12" HeightRequest="100" WidthRequest="80">
+                    <Label Text="Углеводы (г)" FontSize="14" TextColor="#b5b5b5" HorizontalOptions="Center"/>
+                    <ProgressBar  Progress="0.8" BackgroundColor="#d9d9d9" ProgressColor="#D59B6B" ScaleY="2" ScaleX="1.2"/>
+                    <Label x:Name="CarbohydratesLabel" FontSize="16" Text="80 из 100" TextColor="Black" HorizontalOptions="Center" />
+                </StackLayout>
+
+                <StackLayout Spacing="12" MaximumHeightRequest="100" MaximumWidthRequest="80">
+                    <Label Text="Жиры (г)" FontSize="14" TextColor="#b5b5b5" HorizontalOptions="Center"/>
+                    <ProgressBar  Progress="0.8" BackgroundColor="#d9d9d9" ProgressColor="#D59B6B" ScaleY="2" ScaleX="1.2"/>
+                    <Label x:Name="FatsLabel" FontSize="16" Text="80 из 100" TextColor="Black" HorizontalOptions="Center" />
+                </StackLayout>
+           </FlexLayout>
+       </StackLayout>
+        <Border Grid.Row="4" Grid.ColumnSpan="3" Stroke="#d9d9d9" MaximumHeightRequest="2"/>
+        <Label Grid.Row="5" Grid.Column="1" Margin="0,20,0,0">
+              <Label.FormattedText>
+                  <FormattedString>
+                      <Span Text="Вода -  " FontSize="20" TextColor="Black"/>
+                      <Span x:Name="ResultWater" Text="2.25" TextColor="#407F80" FontSize="20" FontAttributes="Bold" TextDecorations="Underline" />
+                      <Span Text=" л" TextColor="#407F80"  FontSize="20" FontAttributes="Bold" TextDecorations="Underline"/>
+                  </FormattedString>
+
+              </Label.FormattedText>
+          </Label>
+        <FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween"  Grid.Row="6" Grid.Column="1">
+            <ImageButton x:Name="Glass1" Clicked="Glass1_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass2"  Clicked="Glass2_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass3" Clicked="Glass3_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass4" Clicked="Glass4_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass5" Clicked="Glass5_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass6" Clicked="Glass6_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass7" Clicked="Glass7_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass8" Clicked="Glass8_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass9" Clicked="Glass9_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Fullglass.PNG"/>
+            <ImageButton x:Name="Glass10" Clicked="Glass10_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Emptyglass.png"/>
+            <ImageButton x:Name="Glass11" Clicked="Glass11_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Emptyglass.png"/>
+            <ImageButton x:Name="Glass12" Clicked="Glass12_Clicked" WidthRequest="50" Source="AppIcon/Glasses/Emptyglass.png"/>
+
+           </FlexLayout>
+        <Border Grid.Row="7" Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="#d9d9d9"/>
+       
+        <StackLayout Margin="0,15,0,0" Grid.Row="8" Grid.Column="1" Spacing="15">
+            <Label Text="Измерение веса" TextColor="Black" FontSize="20"/>
+            <Border Stroke="#d9d9d9" StrokeShape="RoundRectangle 20,20,20,20" BackgroundColor="#d9d9d9" MinimumHeightRequest="80">
+                <FlexLayout JustifyContent="SpaceAround">
+                    <ImageButton x:Name="MinusWeightButton" Clicked="MinusWeightButton_Clicked" Source="Buttons/-.png"/>
+                        <Label VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span x:Name="WeightLabel" Text="60,1" TextColor="Black" FontSize="32"  />
+                                    <Span  Text=" кг" TextColor="Black" FontSize="32" />
+                                </FormattedString>
+
+                            </Label.FormattedText>
+                            </Label>
+                     <ImageButton x:Name="PlusWeightButton" Clicked="PlusWeightButton_Clicked" Source="Buttons/+.png"/>
+                </FlexLayout>
+            </Border>
+        </StackLayout>
+    </Grid>
 </ContentPage>

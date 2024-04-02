@@ -5,9 +5,7 @@ public partial class App : Application
 {
 	public App()
 	{
-	//Preferences.Clear();
 		InitializeComponent();
-		Preferences.Clear();
 		if(!Preferences.ContainsKey("guid"))
 		{
 			string id = Guid.NewGuid().ToString();
@@ -18,7 +16,7 @@ public partial class App : Application
         }
         else
 		{
-			 Helper.guid=Preferences.Get("guid", "error");
+			Helper.guid=Preferences.Get("guid", "error");
 			MainPage = new NavigationPage(new Main());
         }
 

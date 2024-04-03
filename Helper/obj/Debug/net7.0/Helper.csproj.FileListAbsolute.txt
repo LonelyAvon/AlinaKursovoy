@@ -10,3 +10,5 @@
 /Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/refint/Helper.dll
 /Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.pdb
 /Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/ref/Helper.dll
+/Users/user/Projects/MobilBogdanova/Helper/bin/Debug/net7.0/Helper.runtimeconfig.json
+/Users/user/Projects/MobilBogdanova/Helper/obj/Debug/net7.0/Helper.genruntimeconfig.cache

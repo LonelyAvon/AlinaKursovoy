@@ -1,4 +1,5 @@
 ﻿using MobilBogdanova;
+using Helper;
 namespace MobilBogdanova
 {
 	public partial class MainPage : ContentPage

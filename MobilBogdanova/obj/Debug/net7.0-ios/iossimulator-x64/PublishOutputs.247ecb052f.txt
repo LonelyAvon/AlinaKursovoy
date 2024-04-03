@@ -1,5 +1,10 @@
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/icudt.dat
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/en-US/Syncfusion.Maui.ListView.resources.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.EntityFrameworkCore.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.Caching.Memory.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.Configuration.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.DependencyInjection.dll
@@ -10,6 +15,8 @@
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.Options.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Extensions.Primitives.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Microsoft.Maui.Graphics.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Npgsql.dll
+/Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Syncfusion.Licensing.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Syncfusion.Maui.Core.dll
 /Users/user/Projects/MobilBogdanova/MobilBogdanova/bin/Debug/net7.0-ios/iossimulator-x64/publish/../MobilBogdanova.app/Syncfusion.Maui.DataSource.dll

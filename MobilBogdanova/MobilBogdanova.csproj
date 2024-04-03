@@ -62,6 +62,13 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 		<MauiImage Include="Resources\AppIcon\calendar.svg" />
+		<MauiImage Include="Resources\Buttons\settings.svg" />
+		<MauiImage Include="Resources\Buttons\eat.svg" />
+		<MauiImage Include="Resources\Buttons\diary.svg" />
+		<MauiImage Include="Resources\Buttons\back.svg" />
+		<MauiImage Include="Resources\Buttons\add.svg" />
+		<MauiImage Include="Resources\Buttons\plus.svg" />
+		<MauiImage Include="Resources\Buttons\minus.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -78,8 +85,13 @@
 	  <None Remove="Resources\AppIcon\Glasses\Emptyglass.png" />
 	  <None Remove="Resources\.DS_Store" />
 	  <None Remove="Resources\Buttons\" />
-	  <None Remove="Resources\Buttons\-.png" />
-	  <None Remove="Resources\Buttons\+.png" />
+	  <None Remove="Resources\Buttons\settings.svg" />
+	  <None Remove="Resources\Buttons\eat.svg" />
+	  <None Remove="Resources\Buttons\diary.svg" />
+	  <None Remove="Resources\Buttons\back.svg" />
+	  <None Remove="Resources\Buttons\add.svg" />
+	  <None Remove="Resources\Buttons\plus.svg" />
+	  <None Remove="Resources\Buttons\minus.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
@@ -91,8 +103,6 @@
 	  <BundleResource Include="Resources\AppIcon\Glasses\Fullglass.PNG" />
 	  <BundleResource Include="Resources\AppIcon\Glasses\Emptyglass.png" />
 	  <BundleResource Include="Resources\.DS_Store" />
-	  <BundleResource Include="Resources\Buttons\-.png" />
-	  <BundleResource Include="Resources\Buttons\+.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Helper\Helper.csproj" />

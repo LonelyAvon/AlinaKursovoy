@@ -11,12 +11,13 @@ public partial class App : Application
 			string id = Guid.NewGuid().ToString();
 			Preferences.Set("guid", id);
             Helper.guid = Preferences.Get("guid", "error");
+			Helper.user.Uuid = id;
             MainPage = new NavigationPage(new MainPage());
 
         }
         else
 		{
-			Helper.guid=Preferences.Get("guid", "error");
+			Helper.guid = Preferences.Get("guid", "error");
 			MainPage = new NavigationPage(new Main());
         }
 

@@ -1,29 +1,48 @@
 ﻿<Properties StartupConfiguration="{20D86713-C7C9-4BDB-804F-667189BC81E2}|Default">
+  <MonoDevelop.Ide.ItemProperties.MobilBogdanova PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" Xamarin.HotReload.DebuggerTimeoutException.MobilBogdanova.HideInfoBar="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MobilBogdanova/Pages/Main.xaml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobilBogdanova/Pages/page1.xaml">
     <Files>
-      <File FileName="MobilBogdanova/Pages/Main.xaml.cs" Line="1" Column="1" />
-      <File FileName="MobilBogdanova/Pages/Main.xaml" Line="114" Column="43" />
-      <File FileName="MobilBogdanova/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="MobilBogdanova/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="Helper/Helper.cs" Line="1" Column="1" />
+      <File FileName="MobilBogdanova/Pages/Main.xaml" Line="77" Column="26" />
+      <File FileName="MobilBogdanova/Pages/Main.xaml.cs" />
+      <File FileName="MobilBogdanova/Pages/Eat.xaml.cs" />
+      <File FileName="MobilBogdanova/Platforms/iOS/Program.cs" />
+      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml" />
+      <File FileName="MobilBogdanova/Pages/ThirdPage.xaml.cs" />
+      <File FileName="Helper/Helper.cs" />
+      <File FileName="MobilBogdanova/MainPage.xaml" />
+      <File FileName="MobilBogdanova/AppShell.xaml" />
+      <File FileName="MobilBogdanova/MainPage.xaml.cs" />
+      <File FileName="MobilBogdanova/App.xaml" />
+      <File FileName="MobilBogdanova/App.xaml.cs" Line="26" Column="3" />
+      <File FileName="MobilBogdanova/Pages/SecondPage.xaml" />
+      <File FileName="MobilBogdanova/Pages/SecondPage.xaml.cs" />
+      <File FileName="MobilBogdanova/Resources/AppIcon/appicon.svg" />
+      <File FileName="MobilBogdanova/MauiProgram.cs" />
+      <File FileName="Helper/Models/Eat.cs" />
+      <File FileName="Helper/Models/Gender.cs" />
+      <File FileName="Helper/Models/Meal.cs" />
+      <File FileName="Helper/Models/Purpose.cs" />
+      <File FileName="Helper/Models/User.cs" />
+      <File FileName="MobilBogdanova/Pages/AddEat.xaml.cs" />
+      <File FileName="MobilBogdanova/Platforms/iOS/Info.plist" />
+      <File FileName="MobilBogdanova/Platforms/iOS/AppDelegate.cs" />
+      <File FileName="MobilBogdanova/Platforms/MacCatalyst/Program.cs" />
+      <File FileName="MobilBogdanova/Pages/AddEat.xaml" Line="10" Column="1" />
+      <File FileName="MobilBogdanova/Pages/page1.xaml" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MobilBogdanova">
-            <Node name="Helper" expanded="True" />
-            <Node name="MobilBogdanova">
+          <Node name="MobilBogdanova" expanded="True">
+            <Node name="MobilBogdanova" selected="True">
               <Node name="Pages">
+                <Node name="Main.xaml" expanded="True" />
                 <Node name="SecondPage.xaml" expanded="True" />
                 <Node name="ThirdPage.xaml" expanded="True" />
               </Node>
-              <Node name="Platforms" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="Buttons" expanded="True">
-                  <Node name="settings.svg" selected="True" />
-                </Node>
                 <Node name="Images" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
@@ -32,13 +51,9 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MobilBogdanova PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A34CEE51-D0DB-4422-AB98-4B331396378E" Xamarin.HotReload.DebuggerTimeoutException.MobilBogdanova.HideInfoBar="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

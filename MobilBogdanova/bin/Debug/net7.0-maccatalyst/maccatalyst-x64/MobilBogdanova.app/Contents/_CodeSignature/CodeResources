@@ -20,14 +20,6 @@
 		<data>
 		NqguRZGMIhl7qrTWfU2DRDK4Blg=
 		</data>
-		<key>Resources/Buttons/+.png</key>
-		<data>
-		pH+5MYzs7xJONAj1aaIoajXkgwI=
-		</data>
-		<key>Resources/Buttons/-.png</key>
-		<data>
-		ftRqINUaPy5ExglHs0oWFeCKdmU=
-		</data>
 		<key>Resources/Images/grape.png</key>
 		<data>
 		7vMG9SYAHB4WWXU5ro0ECL3pHvc=
@@ -84,6 +76,18 @@
 		<data>
 		jL4ElZzMzZb+EwVtNSYEug/mWGU=
 		</data>
+		<key>Resources/close.png</key>
+		<data>
+		NMsSHh+vV6mNZwIGMhtExFsmGRU=
+		</data>
+		<key>Resources/close@2x.png</key>
+		<data>
+		SkPqVegAQBZjVC6COUAcfsn/yVk=
+		</data>
+		<key>Resources/close@3x.png</key>
+		<data>
+		9PypJ01qsEiBILY5CqSbrOlcwus=
+		</data>
 		<key>Resources/diary.png</key>
 		<data>
 		RQvfLy8Z+jltYYBs4MEYsPPjDQ8=
@@ -124,6 +128,30 @@
 		<data>
 		7vMG9SYAHB4WWXU5ro0ECL3pHvc=
 		</data>
+		<key>Resources/minus.png</key>
+		<data>
+		ufyfWaTYKGLkkuousWeBF0tMHsM=
+		</data>
+		<key>Resources/minus@2x.png</key>
+		<data>
+		cPYFO1v55nSbXsUe6waNNyJrJeU=
+		</data>
+		<key>Resources/minus@3x.png</key>
+		<data>
+		7WuRbictwgH4h5iAUXgFxMHff9c=
+		</data>
+		<key>Resources/plus.png</key>
+		<data>
+		yBTnrBe4RlcTDdrWLByGVS5etz4=
+		</data>
+		<key>Resources/plus@2x.png</key>
+		<data>
+		29Im3pxWQT+AhVrgEIgiMk0CADE=
+		</data>
+		<key>Resources/plus@3x.png</key>
+		<data>
+		FHMrbM6NMPnyBUkh4V+3Zd43DkM=
+		</data>
 		<key>Resources/settings.png</key>
 		<data>
 		UqAUHeychhM0Pjn0atDfiErJjXo=
@@ -143,14 +171,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			324OOrWqXUfYoS5IxG/LcyLJwNDy42QEHkNzZJVqMXc=
+			CjGmLEtGVNRopjj08cXIT6B0Pmadwys2ZonqryiYIjY=
 			</data>
 		</dict>
 		<key>MonoBundle/Helper.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PbI3y3WE3iGlQcKq4YH6nmcoY24WfzUFWwTGmya+YE=
+			80RvBxiAecdPBCQDrzhtBGGEiHPusHCGGaQDnqWb2gM=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -339,14 +367,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k9vlN5GZaDwdVCuYH5ZEfV8aTOLWVOfkkEWs2LebxY8=
+			1+2pCFOcmFLtSewulnNbkXayPU65Ng5YRShpHoFnH1k=
 			</data>
 		</dict>
 		<key>MonoBundle/MobilBogdanova.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xi5VW2aYztvGKmQW3yPSB2G1zeuZiwavrViy/rd2qCs=
+			r41+0hJxrnuWm8O4mtoTig5apPw4Of2ESfOQLpt1UPM=
 			</data>
 		</dict>
 		<key>MonoBundle/Npgsql.EntityFrameworkCore.PostgreSQL.dll</key>
@@ -1595,20 +1623,6 @@
 			suMBvP7UoYtRGb6Lb47/hI/485yglogkHAVT5b9vJfs=
 			</data>
 		</dict>
-		<key>Resources/Buttons/+.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qfImPRFos0FSh0C17DwwzkocLs/acE4zsRZgr1ieDbw=
-			</data>
-		</dict>
-		<key>Resources/Buttons/-.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UDbTy6PhBw8JpdzZ43b7LNBu2RdsMwezpo8Zy6Df0zs=
-			</data>
-		</dict>
 		<key>Resources/Images/grape.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1707,6 +1721,27 @@
 			Fzvp8Mb+n8T52Xk34zpgxMxPLVM65IaCthpu1LzTxZg=
 			</data>
 		</dict>
+		<key>Resources/close.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ocfifFsW141Lv9/IUAq0gc2kiOpBQI4PiHyzoxQqHiE=
+			</data>
+		</dict>
+		<key>Resources/close@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qvGyVKDYFIgXXqMeGidqT/K/yQHuoFTrdvFxIyqSqyk=
+			</data>
+		</dict>
+		<key>Resources/close@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6UIU8hK74wXGAWGsM4QIutASIqEvXDyA2gp6H5Li6zk=
+			</data>
+		</dict>
 		<key>Resources/diary.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1775,6 +1810,48 @@
 			<key>hash2</key>
 			<data>
 			AMI/mtSMJ9JFoee0wmdMPc4oU77xDxHwJiGtJVtA55w=
+			</data>
+		</dict>
+		<key>Resources/minus.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xFX2g9ueYBUHooBvVg8jmNSBvhFx7OO8QoMd6+j1Tkc=
+			</data>
+		</dict>
+		<key>Resources/minus@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WulXYudF1MKDsF1XwXrqRQe/ZopTYZon4NgsKgNRmy8=
+			</data>
+		</dict>
+		<key>Resources/minus@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4WQMP9Kb3g8DMAP2lD21W5FaMSF3FnJ0hGQS6eoYVTg=
+			</data>
+		</dict>
+		<key>Resources/plus.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q2Gi4KhAKpaTs+2kJhbfiziF03dmMRSYW4sjqjnmy0I=
+			</data>
+		</dict>
+		<key>Resources/plus@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dDSLiLMRw++bCL6b1MOAGQyd6pJNhT6au9V4LKIPbsw=
+			</data>
+		</dict>
+		<key>Resources/plus@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QQIQWCjK/LlWEeAv2Y01OqxEAr9srh+DIrzzEEUsuzw=
 			</data>
 		</dict>
 		<key>Resources/settings.png</key>

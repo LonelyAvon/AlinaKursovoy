@@ -33,6 +33,7 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	  <CodesignKey>iPhone Developer</CodesignKey>
+	  <MtouchUseLlvm>true</MtouchUseLlvm>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
@@ -69,6 +70,7 @@
 		<MauiImage Include="Resources\Buttons\add.svg" />
 		<MauiImage Include="Resources\Buttons\plus.svg" />
 		<MauiImage Include="Resources\Buttons\minus.svg" />
+		<MauiImage Include="Resources\Buttons\close.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -92,6 +94,7 @@
 	  <None Remove="Resources\Buttons\add.svg" />
 	  <None Remove="Resources\Buttons\plus.svg" />
 	  <None Remove="Resources\Buttons\minus.svg" />
+	  <None Remove="Resources\Buttons\close.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />

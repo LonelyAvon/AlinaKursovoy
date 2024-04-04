@@ -28,7 +28,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <ImageButton  Source="add.png" MaximumHeightRequest="20" MaximumWidthRequest="20" VerticalOptions="Start"/>
+                <ImageButton x:Name="BreakfeastAddButton" Source="add.png" MaximumHeightRequest="20" MaximumWidthRequest="20" VerticalOptions="Start" Clicked="BreakfeastAddButton_Clicked"/>
             </FlexLayout>
 
             <CollectionView MaximumHeightRequest="100" x:Name="BreakfeastView" Margin="10,0,0,0" SelectionMode="Single" >

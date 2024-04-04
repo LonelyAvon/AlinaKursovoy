@@ -17,6 +17,7 @@ public partial class Main : ContentPage
 
     void Glass1_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(1);
         ResultWater.Text = $"{water*1}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path+"Emptyglass.png";
@@ -35,6 +36,7 @@ public partial class Main : ContentPage
 
     void Glass2_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(2);
         ResultWater.Text = $"{water * 2}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -52,6 +54,7 @@ public partial class Main : ContentPage
 
     void Glass3_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(3);
         ResultWater.Text = $"{water * 3}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -69,6 +72,7 @@ public partial class Main : ContentPage
 
     void Glass4_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(4);
         ResultWater.Text = $"{water * 4}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -86,6 +90,7 @@ public partial class Main : ContentPage
 
     void Glass5_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(5);
         ResultWater.Text = $"{water * 5}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -103,6 +108,7 @@ public partial class Main : ContentPage
 
     void Glass6_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(6);
         ResultWater.Text = $"{water * 6}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -120,6 +126,7 @@ public partial class Main : ContentPage
 
     void Glass7_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(7);
         ResultWater.Text = $"{water * 7}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -137,6 +144,7 @@ public partial class Main : ContentPage
 
     void Glass8_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(8);
         ResultWater.Text = $"{water * 8}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -154,6 +162,7 @@ public partial class Main : ContentPage
 
     void Glass9_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(9);
         ResultWater.Text = $"{water * 9}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -171,6 +180,7 @@ public partial class Main : ContentPage
 
     void Glass10_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(10);
         ResultWater.Text = $"{water * 10}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -188,6 +198,7 @@ public partial class Main : ContentPage
 
     void Glass11_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(11);
         ResultWater.Text = $"{water * 11}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -205,6 +216,7 @@ public partial class Main : ContentPage
 
     void Glass12_Clicked(System.Object sender, System.EventArgs e)
     {
+        AddWater(12);
         ResultWater.Text = $"{water * 12}";
         Glass1.Source = path + "Fullglass.PNG";
         Glass2.Source = path + "Fullglass.PNG";
@@ -225,15 +237,33 @@ public partial class Main : ContentPage
         double res = double.Parse(WeightLabel.Text) + 0.1;
         string result = string.Format("{0:#.#}", res);
         WeightLabel.Text = result;
+
+        var db = Helper.GetContext();
+        ChangeWeight(double.Parse(result));
+    }
+
+    public void ChangeWeight(double weight)
+    {
+        var db = Helper.GetContext();
+        var thisday = DateOnly.FromDateTime(DayDatePicker.Date);
+        var finduser = db.Users.Where(user => user.Uuid == Helper.guid).FirstOrDefault();
+
+
+        var findday = db.Days.Where(day => day.Datenow == thisday && day.Uuid == Helper.guid).FirstOrDefault();
+        findday.Weight = weight;
+        finduser.Weight = weight;
+        db.SaveChanges();
     }
 
     void MinusWeightButton_Clicked(System.Object sender, System.EventArgs e)
     {
         double res = double.Parse(WeightLabel.Text) - 0.1;
         string result = string.Format("{0:#.#}", res);
-        WeightLabel.Text = result;
-    }
 
+        WeightLabel.Text = result;
+        ChangeWeight(double.Parse(result));
+    }
+    
 
     async void ToEat_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -244,12 +274,13 @@ public partial class Main : ContentPage
     {
     }
 
-    async void ContentPage_Loaded(System.Object sender, System.EventArgs e)
+    void ContentPage_Loaded(System.Object sender, System.EventArgs e)
     {
-        Allccal();
         AddDay();
+        RefreshWater();
+        RefreshCcal();
     }
-    public void Allccal()
+    public double Allccal(double weight)
     {
         _user = Helper.GetContext().Users.Where(user => user.Uuid == Helper.guid).FirstOrDefault();
 
@@ -303,18 +334,25 @@ public partial class Main : ContentPage
 
         int age = DateOnly.FromDateTime(DateTime.Now).Year - _user.Birthday.Value.Year;
 
-        double resultccal = Convert.ToDouble(((10 * _user.Weight) + (6.25 * _user.Height) - (5 * age)) * activityK + purposeK + genderK);
+        
 
+        double resultccal = Convert.ToDouble(((10 * weight) + (6.25 * _user.Height) - (5 * age)) * activityK + purposeK + genderK);
 
+        return resultccal;
+    }
+    public void RefreshCcal()
+    {
+        var thisdate = DateOnly.FromDateTime(DayDatePicker.Date);
+
+        var day = Helper.GetContext().Days.Where(day => day.Datenow == thisdate && day.Uuid == Helper.guid).FirstOrDefault();
+
+        int resultccal = Convert.ToInt32(day.Ccal);
         ResultCcal.Text = Convert.ToInt32(resultccal).ToString();
 
         int eaten = Convert.ToInt32(EatLabel.Text);
         AllCcalProgressBar.Progress = eaten / resultccal;
         StayLabel.Text = (Convert.ToInt32(resultccal) - eaten).ToString();
-
-        WeightLabel.Text = _user.Weight.ToString();
     }
-
     public void AddDay()
     {
         var context = Helper.GetContext();
@@ -322,34 +360,113 @@ public partial class Main : ContentPage
         var thisday = DateOnly.FromDateTime(DayDatePicker.Date);
 
         var searchday = context.Days.Where(day => day.Datenow == thisday && day.Uuid == Helper.guid).FirstOrDefault();
+        var user = context.Users.Where(us => us.Uuid == Helper.guid).FirstOrDefault();
 
-        int ccal = Convert.ToInt32(ResultCcal.Text);
+        int ccal = Convert.ToInt32(Allccal(Convert.ToDouble(user.Weight)));
 
         int proteins = Convert.ToInt32(ccal * 0.3) / 4;
         int fats = Convert.ToInt32(ccal * 0.3) / 9;
         int carbohydrates = Convert.ToInt32(ccal * 0.4) / 4;
-
+        double water = double.Parse(ResultWater.Text);
         
         EndCarbohydratesLabel.Text = proteins.ToString();
         EndFatsLabel.Text = fats.ToString();
         EndProteinsLabel.Text = proteins.ToString();
 
+
         if (searchday == null)
         {
+            
             Day newday = new Day
             {
                 Uuid = Helper.guid,
                 Datenow = thisday,
                 Ccal = ccal,
+                Water = water,
+                Weight = user.Weight,
                 Proteins = proteins,
                 Fats = fats,
                 Carbohydrates = carbohydrates,
             };
+            WeightLabel.Text = user.Weight.ToString();
             context.Days.Add(newday);
-            context.SaveChanges();
         }
-       
+        else
+        {
+            WeightLabel.Text = searchday.Weight.ToString();
+        }
+
+        context.SaveChanges();
     }
+
+
+    public void RefreshWater()
+    {
+        var date = DateOnly.FromDateTime(DayDatePicker.Date);
+        var db = Helper.GetContext();
+
+        var thisday = db.Days.Where(day => day.Uuid == Helper.guid && day.Datenow == date).FirstOrDefault();
+
+        if (thisday != null)
+        {
+            switch (thisday.Water / water)
+            {
+
+                case 1:
+                    Glass1_Clicked(Glass1, new EventArgs());
+                    break;
+                case 2:
+                    Glass2_Clicked(Glass2, new EventArgs());
+                    break;
+                case 3:
+                    Glass3_Clicked(Glass3, new EventArgs());
+                    break;
+                case 4:
+                    Glass4_Clicked(Glass4, new EventArgs());
+                    break;
+                case 5:
+                    Glass5_Clicked(Glass5, new EventArgs());
+                    break;
+                case 6:
+                    Glass6_Clicked(Glass6, new EventArgs());
+                    break;
+                case 7:
+                    Glass7_Clicked(Glass7, new EventArgs());
+                    break;
+                case 8:
+                    Glass8_Clicked(Glass8, new EventArgs());
+                    break;
+                case 9:
+                    Glass9_Clicked(Glass9, new EventArgs());
+                    break;
+                case 10:
+                    Glass10_Clicked(Glass10, new EventArgs());
+                    break;
+                case 11:
+                    Glass11_Clicked(Glass11, new EventArgs());
+                    break;
+                case 12:
+                    Glass12_Clicked(Glass12, new EventArgs());
+                    break;
+            }
+        }
+    }
+
+    public void AddWater(int number)
+    {
+        var db = Helper.GetContext();
+
+        var thisdate = DateOnly.FromDateTime(DayDatePicker.Date);
+
+        var thisday = db.Days.Where(day => day.Datenow == thisdate && day.Uuid == Helper.guid).FirstOrDefault();
+
+        double waterqua = water * number;
+
+        thisday.Water = waterqua;
+
+        db.SaveChanges();
+    }
+
 
     protected override async void OnAppearing()
     {
@@ -358,10 +475,12 @@ public partial class Main : ContentPage
 
       //здесь писать код после возвращения с других страниц
     }
+    
 
-    async void DayDatePicker_DateSelected(System.Object sender, Microsoft.Maui.Controls.DateChangedEventArgs e)
+    void DayDatePicker_DateSelected(System.Object sender, Microsoft.Maui.Controls.DateChangedEventArgs e)
     {
-        Allccal();
         AddDay();
+        RefreshWater();
+        RefreshCcal();
     }
 }

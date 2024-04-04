@@ -11,7 +11,7 @@ public partial class User
 
     public int? Height { get; set; }
 
-    public int? Weight { get; set; }
+    public double? Weight { get; set; }
 
     public DateOnly? Birthday { get; set; }
 

@@ -19,9 +19,17 @@ public partial class Day
 
     public int? Carbohydrates { get; set; }
 
-    public decimal? Water { get; set; }
+    public double? Water { get; set; }
 
-    public decimal? Weight { get; set; }
+    public double? Weight { get; set; }
+
+    public int? Ccaleat { get; set; }
+
+    public int? Proteinseat { get; set; }
+
+    public int? Fatseat { get; set; }
+
+    public int? Carbohydrateseat { get; set; }
 
     public virtual ICollection<Dayeat> Dayeats { get; set; } = new List<Dayeat>();
 

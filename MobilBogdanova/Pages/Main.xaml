@@ -94,7 +94,7 @@
               <Label.FormattedText>
                   <FormattedString>
                       <Span Text="Вода -  " FontSize="20" TextColor="Black"/>
-                      <Span x:Name="ResultWater" Text="2.25" TextColor="#407F80" FontSize="20" FontAttributes="Bold" TextDecorations="Underline" />
+                      <Span x:Name="ResultWater" Text="2,25" TextColor="#407F80" FontSize="20" FontAttributes="Bold" TextDecorations="Underline" />
                       <Span Text=" л" TextColor="#407F80"  FontSize="20" FontAttributes="Bold" TextDecorations="Underline"/>
                   </FormattedString>
               </Label.FormattedText>

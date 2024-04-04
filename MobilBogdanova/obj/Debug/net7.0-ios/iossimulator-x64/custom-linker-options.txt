@@ -212,7 +212,7 @@ MonoLibrary=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.ios
 				SdkVersion=17.2
 				TargetArchitectures=x86_64
 				TargetFramework=.NETCoreApp,Version=v7.0,Profile=ios
-				UseLlvm=False
+				UseLlvm=true
 				Verbosity=0
 				XamarinNativeLibraryDirectory=/usr/local/share/dotnet/packs/Microsoft.iOS.Runtime.iossimulator-x64/16.4.7141/runtimes/iossimulator-x64/native
 				XamarinRuntime=MonoVM

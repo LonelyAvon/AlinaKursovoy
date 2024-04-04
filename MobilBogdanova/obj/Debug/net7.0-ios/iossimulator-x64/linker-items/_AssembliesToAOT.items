@@ -2,13 +2,13 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <_AssembliesToAOT Include="obj/Debug/net7.0-ios/iossimulator-x64/linked/System.Private.CoreLib.dll">
-      <Arguments>--aot=mtriple=x86_64-ios data-outfile=obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.aotdata static asmonly interp readonly-value=ObjCRuntime.Runtime.Arch=i4/1 dwarfdebug no-direct-calls outfile=obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.dll.s ntrampolines=16384 nrgctx-trampolines=16384 nimt-trampolines=2048 nrgctx-fetch-trampolines=512 ngsharedvt-trampolines=2048 nftnptr-arg-trampolines=512 nunbox-arbitrary-trampolines=1024</Arguments>
-      <ProcessArguments>--debug</ProcessArguments>
-      <Abi>x86_64</Abi>
+      <Arguments>--aot=mtriple=x86_64-ios data-outfile=obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.aotdata static asmonly interp readonly-value=ObjCRuntime.Runtime.Arch=i4/1 nodebug dwarfdebug llvm-path=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.AOT.osx-x64.Cross.iossimulator-x64/7.0.17/Sdk/../tools outfile=obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.dll.s llvm-outfile=obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.dll.llvm.o ntrampolines=16384 nrgctx-trampolines=16384 nimt-trampolines=2048 nrgctx-fetch-trampolines=512 ngsharedvt-trampolines=2048 nftnptr-arg-trampolines=512 nunbox-arbitrary-trampolines=1024</Arguments>
+      <ProcessArguments>--debug --llvm</ProcessArguments>
+      <Abi>x86_64+LLVM</Abi>
       <Arch>x86_64</Arch>
       <AOTData>obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.aotdata</AOTData>
       <AOTAssembly>obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.dll.s</AOTAssembly>
-      <LLVMFile></LLVMFile>
+      <LLVMFile>obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.dll.llvm.o</LLVMFile>
       <ObjectFile>obj/Debug/net7.0-ios/iossimulator-x64/nativelibraries/aot-output/x86_64/System.Private.CoreLib.dll.o</ObjectFile>
     </_AssembliesToAOT>
   </ItemGroup>

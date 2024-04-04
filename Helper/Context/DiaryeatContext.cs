@@ -55,10 +55,14 @@ public partial class DiaryeatContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Carbohydrates).HasColumnName("carbohydrates");
+            entity.Property(e => e.Carbohydrateseat).HasColumnName("carbohydrateseat");
             entity.Property(e => e.Ccal).HasColumnName("ccal");
+            entity.Property(e => e.Ccaleat).HasColumnName("ccaleat");
             entity.Property(e => e.Datenow).HasColumnName("datenow");
             entity.Property(e => e.Fats).HasColumnName("fats");
+            entity.Property(e => e.Fatseat).HasColumnName("fatseat");
             entity.Property(e => e.Proteins).HasColumnName("proteins");
+            entity.Property(e => e.Proteinseat).HasColumnName("proteinseat");
             entity.Property(e => e.Uuid).HasColumnName("uuid");
             entity.Property(e => e.Water).HasColumnName("water");
             entity.Property(e => e.Weight).HasColumnName("weight");

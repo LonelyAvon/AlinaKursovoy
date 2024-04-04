@@ -62,7 +62,7 @@ void xamarin_setup_impl ()
 	xamarin_gc_pump = FALSE;
 	xamarin_init_mono_debug = TRUE;
 	xamarin_executable_name = "MobilBogdanova.dll";
-	mono_use_llvm = FALSE;
+	mono_use_llvm = TRUE;
 	xamarin_log_level = 0;
 	xamarin_arch_name = "x86_64";
 	xamarin_marshal_objectivec_exception_mode = MarshalObjectiveCExceptionModeThrowManagedException;

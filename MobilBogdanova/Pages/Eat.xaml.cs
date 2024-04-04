@@ -17,4 +17,10 @@ public partial class Eat : ContentPage
         await Navigation.PopModalAsync();
 
     }
+    async void BreakfeastAddButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+
+        await Navigation.PushModalAsync(new AddEat());
+
+    }
 }

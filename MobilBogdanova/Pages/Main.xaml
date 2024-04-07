@@ -151,7 +151,7 @@
 
             <StackLayout Orientation="Vertical" Spacing="6">
                 <ImageButton Source="settings.png" MinimumHeightRequest="40" x:Name="ToSettings" Clicked="ToSettings_Clicked"/>
-                <Label Text="Настройки" TextColor="#4D4D4D"/>
+                <Label Text="Настройки"  TextColor="#4D4D4D"/>
             </StackLayout>
 
         </FlexLayout>

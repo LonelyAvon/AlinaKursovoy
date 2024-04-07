@@ -1,4 +1,5 @@
 ﻿namespace MobilBogdanova;
+using Pages;
 using Helper;
 
 public partial class Main : ContentPage
@@ -12,7 +13,6 @@ public partial class Main : ContentPage
 	public Main()
 	{
 		InitializeComponent();
-        
 	}
 
     void Glass1_Clicked(System.Object sender, System.EventArgs e)
@@ -248,7 +248,6 @@ public partial class Main : ContentPage
         var thisday = DateOnly.FromDateTime(DayDatePicker.Date);
         var finduser = db.Users.Where(user => user.Uuid == Helper.guid).FirstOrDefault();
 
-
         var findday = db.Days.Where(day => day.Datenow == thisday && day.Uuid == Helper.guid).FirstOrDefault();
         findday.Weight = weight;
         finduser.Weight = weight;
@@ -263,23 +262,22 @@ public partial class Main : ContentPage
         WeightLabel.Text = result;
         ChangeWeight(double.Parse(result));
     }
-    
 
     async void ToEat_Clicked(System.Object sender, System.EventArgs e)
     {
-        await Navigation.PushModalAsync(new Eat());
+        await Navigation.PushModalAsync(new EatMenu());
     }
 
-    void ToSettings_Clicked(System.Object sender, System.EventArgs e)
+    async void ToSettings_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushModalAsync(new Settings());
     }
 
     void ContentPage_Loaded(System.Object sender, System.EventArgs e)
     {
-        AddDay();
-        RefreshWater();
-        RefreshCcal();
+      
     }
+
     public double Allccal(double weight)
     {
         _user = Helper.GetContext().Users.Where(user => user.Uuid == Helper.guid).FirstOrDefault();
@@ -334,12 +332,11 @@ public partial class Main : ContentPage
 
         int age = DateOnly.FromDateTime(DateTime.Now).Year - _user.Birthday.Value.Year;
 
-        
-
         double resultccal = Convert.ToDouble(((10 * weight) + (6.25 * _user.Height) - (5 * age)) * activityK + purposeK + genderK);
 
         return resultccal;
     }
+
     public void RefreshCcal()
     {
         var thisdate = DateOnly.FromDateTime(DayDatePicker.Date);
@@ -353,6 +350,7 @@ public partial class Main : ContentPage
         AllCcalProgressBar.Progress = eaten / resultccal;
         StayLabel.Text = (Convert.ToInt32(resultccal) - eaten).ToString();
     }
+
     public void AddDay()
     {
         var context = Helper.GetContext();
@@ -368,15 +366,15 @@ public partial class Main : ContentPage
         int fats = Convert.ToInt32(ccal * 0.3) / 9;
         int carbohydrates = Convert.ToInt32(ccal * 0.4) / 4;
         double water = double.Parse(ResultWater.Text);
-        
+
+        StayLabel.Text = ccal.ToString();
         EndCarbohydratesLabel.Text = proteins.ToString();
         EndFatsLabel.Text = fats.ToString();
         EndProteinsLabel.Text = proteins.ToString();
-
+        Helper.CurrentDate = DateOnly.FromDateTime(DayDatePicker.Date); 
 
         if (searchday == null)
         {
-            
             Day newday = new Day
             {
                 Uuid = Helper.guid,
@@ -387,6 +385,10 @@ public partial class Main : ContentPage
                 Proteins = proteins,
                 Fats = fats,
                 Carbohydrates = carbohydrates,
+                Ccaleat = 0,
+                Carbohydrateseat = 0,
+                Fatseat = 0,
+                Proteinseat = 0,
             };
             WeightLabel.Text = user.Weight.ToString();
             context.Days.Add(newday);
@@ -398,7 +400,6 @@ public partial class Main : ContentPage
 
         context.SaveChanges();
     }
-
 
     public void RefreshWater()
     {
@@ -451,7 +452,6 @@ public partial class Main : ContentPage
             }
         }
     }
-
     public void AddWater(int number)
     {
         var db = Helper.GetContext();
@@ -467,20 +467,66 @@ public partial class Main : ContentPage
         db.SaveChanges();
     }
 
-
-    protected override async void OnAppearing()
+    protected override void OnAppearing()
     {
-       
         base.OnAppearing();
-
-      //здесь писать код после возвращения с других страниц
+        AddDay();
+        RefreshWater();
+        RefreshCcal();
+        RefreshCcalBar();
+        RefreshProteinsBar();
+        RefreshCarbohydratesBar();
+        RefreshFatsBar();
     }
-    
+
+    public void RefreshCcalBar()
+    {
+        var date = DateOnly.FromDateTime(DayDatePicker.Date);
+        var day = Helper.GetContext().Days.Where(_day => _day.Datenow == date && _day.Uuid == Helper.guid).FirstOrDefault();
+
+        EatLabel.Text = day.Ccaleat.ToString();
+        StayLabel.Text = (day.Ccal - day.Ccaleat).ToString();
+        AllCcalProgressBar.Progress = Convert.ToDouble(day.Ccaleat) / Convert.ToDouble(day.Ccal);
+    }
+
+    public void RefreshProteinsBar()
+    {
+        var date = DateOnly.FromDateTime(DayDatePicker.Date);
+        var day = Helper.GetContext().Days.Where(_day => _day.Datenow == date && _day.Uuid == Helper.guid).FirstOrDefault();
+
+        StartProteinsLabel.Text = day.Proteinseat.ToString();
+
+        ProteinsProgressBar.Progress = Convert.ToDouble(day.Proteinseat) / Convert.ToDouble(day.Proteins);
+    }
+
+    public void RefreshCarbohydratesBar()
+    {
+        var date = DateOnly.FromDateTime(DayDatePicker.Date);
+        var day = Helper.GetContext().Days.Where(_day => _day.Datenow == date && _day.Uuid == Helper.guid).FirstOrDefault();
+
+        StartCarbohydratesLabel.Text = day.Carbohydrateseat.ToString();
+
+        CarbohydratesProgressBar.Progress = Convert.ToDouble(day.Carbohydrateseat) / Convert.ToDouble(day.Carbohydrates);
+    }
+
+    public void RefreshFatsBar()
+    {
+        var date = DateOnly.FromDateTime(DayDatePicker.Date);
+        var day = Helper.GetContext().Days.Where(_day => _day.Datenow == date && _day.Uuid == Helper.guid).FirstOrDefault();
+
+        StartFatsLabel.Text = day.Fatseat.ToString();
+
+        FatsProgressBar.Progress = Convert.ToDouble(day.Fatseat) / Convert.ToDouble(day.Fats);
+    }
 
     void DayDatePicker_DateSelected(System.Object sender, Microsoft.Maui.Controls.DateChangedEventArgs e)
     {
         AddDay();
         RefreshWater();
         RefreshCcal();
+        RefreshCcalBar();
+        RefreshProteinsBar();
+        RefreshCarbohydratesBar();
+        RefreshFatsBar();
     }
 }

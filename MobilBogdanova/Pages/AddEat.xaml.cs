@@ -1,10 +1,13 @@
-﻿namespace MobilBogdanova;
+﻿using Helper;
 
+namespace MobilBogdanova;
 public partial class AddEat : ContentPage
 {
-	public AddEat()
+    public int _meal;
+	public AddEat(int meal)
 	{
 		InitializeComponent();
+        _meal = meal;
 	}
     async void Back_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -13,11 +16,6 @@ public partial class AddEat : ContentPage
 
    async void AddEatButton_Clicked(System.Object sender, System.EventArgs e)
     {
-        if(BrandTextBox.Text == string.Empty)
-        {
-            await DisplayAlert("Error", "Заполните поле Марка / производитель", "Ok");
-            return;
-        }
         if (ProductNameTextBox.Text == string.Empty)
         {
             await DisplayAlert("Error", "Заполните поле Название продукта", "Ok");
@@ -55,7 +53,29 @@ public partial class AddEat : ContentPage
             return;
         }
 
-        
+        Helper.DiaryeatContext db = Helper.Helper.GetContext();
+        var day = db.Days.Where(_day => _day.Datenow == Helper.Helper.CurrentDate && _day.Uuid == Helper.Helper.guid).FirstOrDefault();
 
+        Helper.Eat eat = new Helper.Eat
+        {
+            IdMeal = _meal,
+            Uuid = Helper.Helper.guid,
+            IdDay = day.Id,
+            Name = ProductNameTextBox.Text,
+            Weight = ProductTotalWeight,
+            Ccal = ProductTotalWeight / 100 * CcalToWeight,
+            Fats = ProductTotalWeight / 100 * FatsToWeight,
+            Proteins = ProductTotalWeight / 100 * ProteinsToWeight,
+            Carbohydrates = ProductTotalWeight / 100 * CarbohydratesToWeight,
+        };
+
+        day.Ccaleat += eat.Ccal;
+        day.Carbohydrateseat += eat.Carbohydrates;
+        day.Fatseat += eat.Fats;
+        day.Proteinseat += eat.Proteins;
+
+        db.Eats.Add(eat);
+        db.SaveChanges();
+        await Navigation.PopModalAsync();
     }
 }

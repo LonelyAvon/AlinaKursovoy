@@ -19,8 +19,6 @@ public partial class DiaryeatContext : DbContext
 
     public virtual DbSet<Day> Days { get; set; }
 
-    public virtual DbSet<Dayeat> Dayeats { get; set; }
-
     public virtual DbSet<Eat> Eats { get; set; }
 
     public virtual DbSet<Gender> Genders { get; set; }
@@ -72,25 +70,6 @@ public partial class DiaryeatContext : DbContext
                 .HasConstraintName("to_user");
         });
 
-        modelBuilder.Entity<Dayeat>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("dayeat_pkey");
-
-            entity.ToTable("dayeat");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.IdDay).HasColumnName("id_day");
-            entity.Property(e => e.IdEat).HasColumnName("id_eat");
-
-            entity.HasOne(d => d.IdDayNavigation).WithMany(p => p.Dayeats)
-                .HasForeignKey(d => d.IdDay)
-                .HasConstraintName("to_day");
-
-            entity.HasOne(d => d.IdEatNavigation).WithMany(p => p.Dayeats)
-                .HasForeignKey(d => d.IdEat)
-                .HasConstraintName("to_eat");
-        });
-
         modelBuilder.Entity<Eat>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("eat_pkey");
@@ -101,10 +80,16 @@ public partial class DiaryeatContext : DbContext
             entity.Property(e => e.Carbohydrates).HasColumnName("carbohydrates");
             entity.Property(e => e.Ccal).HasColumnName("ccal");
             entity.Property(e => e.Fats).HasColumnName("fats");
+            entity.Property(e => e.IdDay).HasColumnName("id_day");
             entity.Property(e => e.IdMeal).HasColumnName("id_meal");
             entity.Property(e => e.Name).HasColumnName("name");
             entity.Property(e => e.Proteins).HasColumnName("proteins");
+            entity.Property(e => e.Uuid).HasColumnName("uuid");
             entity.Property(e => e.Weight).HasColumnName("weight");
+
+            entity.HasOne(d => d.IdDayNavigation).WithMany(p => p.Eats)
+                .HasForeignKey(d => d.IdDay)
+                .HasConstraintName("to_days");
 
             entity.HasOne(d => d.IdMealNavigation).WithMany(p => p.Eats)
                 .HasForeignKey(d => d.IdMeal)

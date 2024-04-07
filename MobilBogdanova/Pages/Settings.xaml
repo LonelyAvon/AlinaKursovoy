@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilBogdanova.Pages.Settings"
+             Title="Settings">
+
+    <Grid BackgroundColor="White" RowDefinitions="30*,50*,30*,Auto,40*,50*,40*,80*" ColumnDefinitions="30,1*,30">
+         <FlexLayout Grid.Row="1" Grid.Column="1" JustifyContent="SpaceBetween">
+             <ImageButton Clicked="Back_Clicked" x:Name="Back" Source="back.png" MaximumHeightRequest="20" MaximumWidthRequest="20" VerticalOptions="StartAndExpand"/>
+            <Label Text="Настройки" FontAttributes="Bold" FontFamily="" TextColor="Black" Margin="0,0,10,0" VerticalOptions="Start" FontSize="32"/>
+             <Label/>
+        </FlexLayout>
+        <Border Grid.Row="2" Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="#d9d9d9"/>
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1" Spacing="20">
+            <VerticalStackLayout >
+                 <Label Margin="8,0,0,0" Text="Пол" TextColor="black" FontSize="16"/>
+                 <Entry x:Name="GenderTextBox" Placeholder="Мужской или Женский" TextColor="Black"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                 <Label Margin="8,0,0,0" Text="Рост" TextColor="black" FontSize="16"/>
+                 <Entry x:Name="HeightTextBox" Placeholder="См" TextColor="Black"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                 <Label Margin="8,0,0,0" Text="Вес" TextColor="black" FontSize="16"/>
+                 <Entry x:Name="WeightTextBox" Placeholder="Кг" TextColor="Black"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
+            </VerticalStackLayout >
+            <VerticalStackLayout>
+                 <Label Margin="8,0,0,0" Text="Дата рождения" TextColor="black" FontSize="16"/>
+                 <DatePicker x:Name="AgeTextBox" TextColor="Black"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                 <Label Margin="8,0,0,0" Text="Активность" TextColor="black" FontSize="16"/>
+                 <Entry x:Name="ActivityTextBox" Placeholder="Активность" TextColor="Black" IsReadOnly="True"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                 <Label Margin="8,0,0,0" Text="Цель" TextColor="black" FontSize="16"/>
+                 <Entry x:Name="PurposeTextBox" Placeholder="Цель" TextColor="Black" IsReadOnly="True"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+
+        <Button Grid.Row="5"  Grid.Column="1" Text="ГОТОВО" x:Name="UploadButton" Clicked="UploadButton_Clicked"/>
+        <Border Grid.Row="6" Grid.ColumnSpan="3" MaximumHeightRequest="2" />
+        <FlexLayout Grid.Row="7" Grid.Column="1" Margin="0,6,0,0" JustifyContent="SpaceBetween">
+
+            <StackLayout Orientation="Vertical" Spacing="6">
+                <ImageButton Source="diary.png" MinimumHeightRequest="40" x:Name="ToDiary" Clicked="ToDiary_Clicked"/>
+                <Label Text="Дневник" TextColor="#4D4D4D"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Spacing="6">
+                <ImageButton Source="eat.png" MinimumHeightRequest="40" x:Name="ToEat" Clicked="ToEat_Clicked"/>
+                <Label Text="Питание" TextColor="#4D4D4D"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Spacing="6">
+                <ImageButton Source="settings.png" MinimumHeightRequest="40" x:Name="ToSettings" IsEnabled="False"/>
+                <Label Text="Настройки"  TextColor="#4D4D4D"/>
+            </StackLayout>
+
+        </FlexLayout>
+
+    </Grid>
+</ContentPage>

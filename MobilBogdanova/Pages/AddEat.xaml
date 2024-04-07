@@ -4,40 +4,35 @@
              x:Class="MobilBogdanova.AddEat"
              NavigationPage.HasNavigationBar="False"
              Title="AddEat">
-     <Grid BackgroundColor="White" RowDefinitions="30*,50*,10*,Auto,40*,Auto,40*,70*,30*,30*" ColumnDefinitions="30,1*,30" >
+     <Grid BackgroundColor="White" RowDefinitions="10*,30*,7*,Auto,40*,Auto,40*,30*,20*" ColumnDefinitions="30,1*,30" >
 
          <FlexLayout JustifyContent="SpaceBetween" Grid.Row="1" Grid.Column="1" VerticalOptions="CenterAndExpand">
 
             <ImageButton Clicked="Back_Clicked" x:Name="Back" Source="close.png" MaximumHeightRequest="20" MaximumWidthRequest="20" VerticalOptions="StartAndExpand"/>
-            <Label Text="Питание" TextColor="Black" FontSize="20" Margin="0,5,20,0" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Добавить пищу" FontAttributes="Bold" FontFamily="" TextColor="Black" FontSize="20" Margin="0,5,20,0" HorizontalOptions="CenterAndExpand"/>
             <Label/>
         </FlexLayout>
 
 
          <Border Grid.Row="2"  Grid.ColumnSpan="3" MaximumHeightRequest="2" VerticalOptions="CenterAndExpand" Stroke="#d9d9d9" />
-         <StackLayout  Margin="20,20,20,30" Grid.Row="3" Grid.Column="1" Spacing="20" >
+         <StackLayout  Margin="20,40,20,30" Grid.Row="3" Grid.Column="1" Spacing="20" >
 
-             <Label Text="Информация о продукте" TextColor="#407F80" FontSize="20" />
-             <VerticalStackLayout>
-                 <Label Text="Марка / производитель" TextColor="black" FontSize="16"/>
-                 <Entry x:Name="BrandTextBox" Placeholder="Название" TextColor="Black"/>
-                 <Border MaximumHeightRequest="2"/>
-             </VerticalStackLayout>
+             <Label Text="Информация о продукте" FontAttributes="Bold" FontFamily="" TextColor="#407F80" FontSize="20" />
              <VerticalStackLayout>
                  <Label Text="Название продукта" TextColor="black" FontSize="16"/>
                  <Entry x:Name="ProductNameTextBox" Placeholder="Название" TextColor="Black"/>
-                 <Border MaximumHeightRequest="2"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
              </VerticalStackLayout>
               <VerticalStackLayout>
                  <Label Text="Размер порции" TextColor="black" FontSize="16"/>
                  <Entry x:Name="WeightProductTextBox" Placeholder="Грамм" TextColor="Black"/>
-                 <Border MaximumHeightRequest="2"/>
+                 <Border MaximumHeightRequest="2" Stroke="#B5B5B5"/>
              </VerticalStackLayout>
          </StackLayout>
 
          <Border Grid.Row="4" Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="#d9d9d9" />
          <StackLayout Margin="20,0,20,0" Grid.Row="5" Grid.Column="1" Spacing="20">
-             <Label  Text="Пищевая ценность на 100 г" TextColor="#407F80" FontSize="20"  />
+             <Label  Text="Пищевая ценность на 100 г" FontAttributes="Bold" FontFamily="" TextColor="#407F80" FontSize="20"  />
              <StackLayout>
 
                  <FlexLayout JustifyContent="SpaceBetween">
@@ -52,21 +47,21 @@
                          </Label.FormattedText>
 
                      </Label>
-                     <Entry x:Name="ProteinsTextBox" TextColor="#407F80" Placeholder="0" PlaceholderColor="#407F80" VerticalTextAlignment="Start" FontSize="16"/>
+                     <Entry x:Name="ProteinsTextBox" Text="0" TextColor="#407F80" Placeholder="0" PlaceholderColor="#D59B6B" VerticalTextAlignment="Start" FontSize="16"/>
                  </FlexLayout>
                    <FlexLayout JustifyContent="SpaceBetween">
 
                      <Label FontSize="16">
                          <Label.FormattedText>
                              <FormattedString>
-                                 <Span Text="Углеводы" TextColor="Black"/>
+                                 <Span Text="Углеводы " TextColor="Black"/>
                                  <Span Text="(г)"  TextColor="#b5b5b5" />
                              </FormattedString>
 
                          </Label.FormattedText>
 
                      </Label>
-                     <Entry x:Name="CarbohydratesTextBox" TextColor="#407F80" Placeholder="0" PlaceholderColor="#407F80" VerticalTextAlignment="Start" FontSize="16" />
+                     <Entry x:Name="CarbohydratesTextBox" Text="0" TextColor="#407F80" Placeholder="0" PlaceholderColor="#D59B6B" VerticalTextAlignment="Start" FontSize="16" />
                  </FlexLayout>
                    <FlexLayout JustifyContent="SpaceBetween">
 
@@ -80,7 +75,7 @@
                          </Label.FormattedText>
 
                      </Label>
-                     <Entry x:Name="FatsTextBox" TextColor="#407F80" Placeholder="0" PlaceholderColor="#407F80" VerticalTextAlignment="Start" FontSize="16"/>
+                     <Entry x:Name="FatsTextBox" Text="0" TextColor="#407F80" Placeholder="0" PlaceholderColor="#D59B6B" VerticalTextAlignment="Start" FontSize="16"/>
                  </FlexLayout>
 
                  <FlexLayout JustifyContent="SpaceBetween">
@@ -95,12 +90,12 @@
                          </Label.FormattedText>
 
                      </Label>
-                     <Entry x:Name="CcalTextBox" TextColor="#407F80" Placeholder="0" PlaceholderColor="#407F80" VerticalTextAlignment="Start" FontSize="16"/>
+                     <Entry x:Name="CcalTextBox" Text="0" TextColor="#407F80" Placeholder="0" PlaceholderColor="#D59B6B" VerticalTextAlignment="Start" FontSize="16"/>
                  </FlexLayout>
 
              </StackLayout>
          </StackLayout>
 
-         <Button Grid.Row="7"  Grid.Column="1"  Text="Добавить"  x:Name="AddEatButton" Clicked="AddEatButton_Clicked"/>
+         <Button Grid.Row="7"  Grid.Column="1"  Text="ДОБАВИТЬ" FontAttributes="Bold" FontFamily="" x:Name="AddEatButton" Clicked="AddEatButton_Clicked"/>
      </Grid>
 </ContentPage>

@@ -38,11 +38,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = MobilBogdanova.Pages.AddEa
 build_metadata.AdditionalFiles.TargetPath = Pages/AddEat.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages/AddEat.xaml
 
-[/Users/user/Projects/MobilBogdanova/MobilBogdanova/Pages/Eat.xaml]
+[/Users/user/Projects/MobilBogdanova/MobilBogdanova/Pages/EatMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MobilBogdanova.Pages.Eat.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages/Eat.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages/Eat.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MobilBogdanova.Pages.EatMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/EatMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/EatMenu.xaml
 
 [/Users/user/Projects/MobilBogdanova/MobilBogdanova/Pages/Main.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -55,6 +55,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MobilBogdanova.Pages.SecondPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages/SecondPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages/SecondPage.xaml
+
+[/Users/user/Projects/MobilBogdanova/MobilBogdanova/Pages/Settings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MobilBogdanova.Pages.Settings.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/Settings.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/Settings.xaml
 
 [/Users/user/Projects/MobilBogdanova/MobilBogdanova/Pages/ThirdPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

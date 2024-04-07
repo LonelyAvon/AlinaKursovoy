@@ -31,7 +31,7 @@ public partial class Day
 
     public int? Carbohydrateseat { get; set; }
 
-    public virtual ICollection<Dayeat> Dayeats { get; set; } = new List<Dayeat>();
+    public virtual ICollection<Eat> Eats { get; set; } = new List<Eat>();
 
     public virtual User? Uu { get; set; }
 }

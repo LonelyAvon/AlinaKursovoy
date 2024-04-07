@@ -21,7 +21,11 @@ public partial class Eat
 
     public int? Carbohydrates { get; set; }
 
-    public virtual ICollection<Dayeat> Dayeats { get; set; } = new List<Dayeat>();
+    public int? IdDay { get; set; }
+
+    public string? Uuid { get; set; }
+
+    public virtual Day? IdDayNavigation { get; set; }
 
     public virtual Meal? IdMealNavigation { get; set; }
 }
